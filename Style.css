@@ -1,0 +1,150 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f9fb;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #007BFF;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1584433144859-1b4fd7b9b72b') no-repeat center center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Section Styling */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #007BFF;
+  margin-bottom: 30px;
+}
+
+.services ul,
+.contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.services li,
+.contact li {
+  margin-bottom: 10px;
+}
+
+.about,
+.services,
+.contact,
+.clients {
+  background: white;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+/* Client logos */
+.clients .logos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.clients .logos img {
+  height: 50px;
+  margin: 10px 20px;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.clients .logos img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #007BFF;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+}
